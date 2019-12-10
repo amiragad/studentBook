@@ -1,0 +1,20 @@
+<div class="form-container">
+    <form #form="ngForm" (submit)="onSubmit(form)">
+        <div class="form-group">
+            <label for="">Your Start date</label>
+            <input name="startDate" required [(ngModel)]="student.startDate" #startDate="ngModel" type="date" class="form-control" id="startDate">
+        </div>
+        <div class="form-group invalid_message" *ngIf="startDate.required && email.touched">
+            * Email is required
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Your Message</label>
+            <textarea name="message" required [(ngModel)]="contact.message" #message="ngModel" type="message" class=" form-control" id="message" rows="3"></textarea>
+        </div>
+        <div class="form-group invalid_message" *ngIf="message.required && message.touched">
+            * message is required
+        </div>
+        <button class="btn btn-dark" type="submit"> Submit</button>
+    </form>
+</div>

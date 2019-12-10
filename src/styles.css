@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+.web-bg {
+    background-image: url("assets/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.color1 {
+    color: #FDF1F0
+}
+
+.color2 {
+    color: #FB991A
+}
+
+.color3 {
+    color: #1B7791
+}
+
+.color4 {
+    color: #022539
+}
